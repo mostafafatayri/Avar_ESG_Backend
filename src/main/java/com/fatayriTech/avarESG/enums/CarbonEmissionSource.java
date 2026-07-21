@@ -1,0 +1,15 @@
+package com.fatayriTech.avarESG.enums;
+
+public enum CarbonEmissionSource {
+
+    DIESEL_GENERATORS,
+    REFRIGERANTS,
+    FIRE_SUPPRESSANT,
+
+    PURCHASED_ELECTRICITY,
+
+    BUSINESS_TRAVEL,
+    EMPLOYEE_COMMUTING,
+
+    WASTE_EMISSION_PREVENTED
+}

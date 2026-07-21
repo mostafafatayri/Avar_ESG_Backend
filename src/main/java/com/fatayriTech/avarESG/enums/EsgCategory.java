@@ -1,0 +1,36 @@
+package com.fatayriTech.avarESG.enums;
+
+public enum EsgCategory {
+
+    ENERGY_MANAGEMENT(EsgPillar.ENVIRONMENTAL),
+    WATER_MANAGEMENT(EsgPillar.ENVIRONMENTAL),
+    WASTE_MANAGEMENT(EsgPillar.ENVIRONMENTAL),
+    RESOURCE_CONSUMPTION(EsgPillar.ENVIRONMENTAL),
+    ENVIRONMENTAL_COMPLIANCE(EsgPillar.ENVIRONMENTAL),
+    SCOPE_1_EMISSIONS(EsgPillar.ENVIRONMENTAL),
+    SCOPE_2_EMISSIONS(EsgPillar.ENVIRONMENTAL),
+    SCOPE_3_EMISSIONS(EsgPillar.ENVIRONMENTAL),
+    TOTAL_GHG_EMISSIONS(EsgPillar.ENVIRONMENTAL),
+
+    EMPLOYEE_WELLBEING(EsgPillar.SOCIAL),
+    DIVERSITY_AND_INCLUSION(EsgPillar.SOCIAL),
+    COMMUNITY_ENGAGEMENT(EsgPillar.SOCIAL),
+    TRAINING_AND_COMPETENCY(EsgPillar.SOCIAL),
+    HEALTH_AND_SAFETY(EsgPillar.SOCIAL),
+
+    COMPLIANCE_OBLIGATIONS(EsgPillar.GOVERNANCE),
+    GOVERNANCE_CONTROLS(EsgPillar.GOVERNANCE),
+    ESG_AUDITS(EsgPillar.GOVERNANCE),
+    RISK_MANAGEMENT(EsgPillar.GOVERNANCE),
+    CORRECTIVE_ACTIONS(EsgPillar.GOVERNANCE);
+
+    private final EsgPillar pillar;
+
+    EsgCategory(EsgPillar pillar) {
+        this.pillar = pillar;
+    }
+
+    public EsgPillar getPillar() {
+        return pillar;
+    }
+}
